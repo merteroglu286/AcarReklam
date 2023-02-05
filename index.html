@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/mdb.min.css">
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/mdb.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.2.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.2.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider-extensions.min.js"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <style type="text/css">
+        html, body {
+            overflow-x: hidden;
+            }
+        body {
+            position: relative
+        }
+        #logo{
+            width: 80%;
+            height: auto;
+            margin-top: 20px;
+        }
+        #iletisim{
+            text-align: end;
+            margin-top: 30px;
+        }
+
+        #header{
+            margin-left: 5%;
+        }
+        .item{
+            transition: .5s ease-in-out;
+        }
+        .item:hover{
+            filter:brightness(80%)
+        }
+
+        .swiffy-slider{
+            width: 100%;
+            height: auto;
+        }
+
+        .img{
+            width: 100%;
+            height: 720px;
+        }
+        #phone-img{
+            float: left;
+        }
+        #mail-img{
+            float: left;
+        }
+
+        #phone-p{
+            text-align: left;
+        }
+        #mail-p{
+            text-align: left;
+        }
+        @media only screen and (min-width: 0px) and (max-width: 767px) {
+            body{
+            overflow-x: hidden;
+            }
+	        #logo{ 
+                width:80%; 
+                height:auto;
+            }
+
+            #iletisim{
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            #header{
+                margin-left: 0;
+            }
+            .swiffy-slider{
+                width: 100%;
+                height: auto;
+            }
+            .img{
+                width: 100%;
+                height: 240px;
+            }
+            #phone-img{
+            float: none;
+            text-align: center;
+            }
+            #phone-p{
+            text-align: center;
+            }
+            #mail-img{
+            float: none;
+            text-align: center;
+            }
+            #mail-p{
+                text-align: center;
+            }
+            #colCall{
+                text-align: center;
+            }
+            #colMail{
+                text-align: center;
+            }
+	    }
+
+    </style>
+
+    <link rel="stylesheet" href="https://swiffyslider.com/configuration/?slider-nav-visible=slider-nav-visible&slider-nav-autoplay=slider-nav-autoplay&slider-indicators-style=slider-indicators-round&slider-indicators-highlight=slider-indicators-highlight&preview-style=preview-images">
+    <link rel="stylesheet" href="https://swiffyslider.com/configuration/?slider-item-show=slider-item-show6">
+</head>
+<body>
+    
+    <div class="container" style="margin-bottom: 20px;">
+        <div class="row">
+            <div class="col-sm text-center"><img src="logo.jpeg" alt="" class="" id="logo"></div>
+            
+            <div class="col-sm" style="margin-top: 30px;" id="colCall">
+                <div>
+                    <img src="call.png" style="margin-right:10px;" alt="" width="64" height="64" id="phone-img">
+                    <p class="pt-2 fw-bold" id="phone-p">Telefon<br>0541 254 26 36</p>
+                </div>
+            </div>
+            
+            <div class="col-sm" style="margin-top: 30px;" id="colMail">
+                <div>
+                    <img src="email.png" style="margin-right:10px;" alt="" width="64" height="64" id="mail-img">
+                    <p class="pt-2 fw-bold" id="mail-p">E-Posta<br>info@acarreklam.com</p>
+                </div>
+            </div>
+            <div class="col-sm" id="iletisim">
+                <a href="#">
+                    <img src="facebook.png" alt="" width="48" height="48">
+                </a>
+                <a href="#">
+                    <img src="instagram.png" alt="" width="48" height="48">
+                </a>
+                <a href="#">
+                    <img src="whatsapp1.png" alt="" width="48" height="48">
+                </a>
+                 
+            </div>
+        </div>
+    </div>  
+
+    <div class="swiffy-slider slider-nav-visible slider-nav-autoplay slider-indicators-round slider-indicators-highlight border border-dark mx-auto w-75">
+        <ul class="slider-container">
+            <li class="slide-visible">
+                <div id="slide1">
+                    <img src="img/slayt/slayt1.jpg" class="img"alt="">
+                </div>
+            </li>
+            <li>
+                <div id="slide2">
+                    <img src="img/slayt/slayt2.jpg" class="img"alt="">
+                </div>
+            </li>
+            <li>
+                <div id="slide3">
+                    <img src="img/slayt/slayt3.jpg" class="img"alt="">
+                </div>
+            </li>
+        </ul>
+    
+        <button type="button" class="slider-nav"></button>
+        <button type="button" class="slider-nav slider-nav-next"></button>
+    
+        <ul class="slider-indicators">
+            <li class="active"></li>
+            <li class=""></li>
+            <li class=""></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="row text-center pt-5 pb-1">
+           
+            <div class="col-sm pt-5">
+                <img src="dis-baski.png" alt="" width="120" height="120">
+                <p class="mt-4">Dış Mekan Baskı</p>
+            </div>
+            <div class="col-sm pt-5">
+                <img src="display-urunler.png" alt="" width="120" height="120">
+                <p class="mt-4">Display Ürünler</p>
+            </div>
+            <div class="col-sm pt-5">
+                <img src="tabela-cesitleri.png" alt="" width="120" height="120">
+                <p class="mt-4">Tabela Çeşitleri</p>
+            </div>
+            <div class="col-sm pt-5">
+                <img src="tanitim-urunleri.png" alt="" width="120" height="120">
+                <p class="mt-4">Tanıtım Ürünleri</p>
+            </div>
+        </div>
+
+
+
+        <ul class="nav nav-tabs mt-4">
+            <li class="nav-item mx-2">
+                <a class="nav-link active text-capitalize fs-6" data-bs-toggle="tab" style="color: black;" href="#galeri1">1</a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link text-capitalize fs-6" data-bs-toggle="tab" style="color: black;" href="#icBaski">2</a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link text-capitalize fs-6" data-bs-toggle="tab" style="color: black;" href="#disBaski">3</a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link text-capitalize fs-6" data-bs-toggle="tab" style="color: black;" href="#display">4</a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link text-capitalize fs-6" data-bs-toggle="tab" style="color: black;" href="#tabela">5</a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link text-capitalize fs-6" data-bs-toggle="tab" style="color: black;" href="#tanitim">6</a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane fade show active mt-3" id="galeri1">
+                <div class="">
+                    <div>
+                        <div class="row my-4 justify-content-center">
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/1.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/1.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/8.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/8.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/16.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/16.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/41.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/41.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row my-4 justify-content-center">
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/44.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/44.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/67.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/67.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/78.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/78.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/80.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/80.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row my-4 justify-content-center">
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/92.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/92.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/28.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/28.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/29.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/29.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/30.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/30.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade show mt-3" id="icBaski">
+                <div class="">
+                    <div>
+                        <div class="row my-4 justify-content-center">
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/2.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/2.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/3.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/3.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/4.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/4.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/5.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/5.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row my-4 justify-content-center">
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/6.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/6.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/7.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/7.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/9.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/9.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/10.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/10.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row my-4 justify-content-center">
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/11.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/11.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/12.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/12.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/13.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/13.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/14.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/14.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade show mt-3" id="disBaski">
+                <div class="">
+                    <div>
+                        <div class="row my-4 justify-content-center">                        
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/15.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/15.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/17.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/17.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/18.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/18.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/19.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/19.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row my-4 justify-content-center">
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/20.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/20.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/21.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/21.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/22.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/22.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/23.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/23.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row my-4 justify-content-center">
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/24.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/24.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/25.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/25.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/26.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/26.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/27.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/27.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade show mt-3" id="display">
+                <div class="">
+                    <div>
+                        <div class="row my-4 justify-content-center">
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/32.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/32.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/33.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/33.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/34.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/34.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/35.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/35.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row my-4 justify-content-center">
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/36.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/36.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/37.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/37.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/39.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/39.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/40.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/40.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row my-4 justify-content-center">
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/43.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/43.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/45.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/45.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/46.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/46.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/47.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/47.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade show mt-3" id="tabela">
+                <div class="">
+                    <div>
+                        <div class="row my-4 justify-content-center">
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/48.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/48.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/49.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/49.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/50.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/51.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/52.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/52.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row my-4 justify-content-center">
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/53.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/53.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/54.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/54.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/55.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/55.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/56.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/56.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row my-4 justify-content-center">
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/57.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/57.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/58.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/58.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/59.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/59.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/60.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/60.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade show mt-3" id="tanitim">
+                <div class="">
+                    <div>
+                        <div class="row my-4 justify-content-center">
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/62.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/62.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/63.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/63.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/64.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/64.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/65.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/65.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row my-4 justify-content-center">
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/66.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/66.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/69.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/69.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/70.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/70.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/71.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/71.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row my-4 justify-content-center">
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/72.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/72.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/73.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/73.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/74.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/74.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            <div class="item col-6 col-md-2 mb-3">
+                                <div>
+                                    <a href="img/galeri/61.jpg" class="fancybox" data-fancybox="gallery1">
+                                        <img src="img/galeri/61.jpg" alt="" width="100%" height="100%">
+                                    </a>
+                                    <h5 class="fw-bold mt-2">Başlık</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non.</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+        </div>
+
+        <div class="row py-5 mt-4" style="background-color: #085FA2;">
+            
+            <div class="col-sm text-center text-white mb-4">
+                <img src="user.png" alt="" width="56" height="56" class="mb-2">
+                <div class="fs-1">16</div>
+                <div class="fs-6">UZMANLAR</div>
+            </div>
+            <div class="col-sm text-center text-white mb-4">
+                <img src="users.png" alt="" width="56" height="56" class="mb-2">
+                <div class="fs-1">456</div>
+                <div class="fs-6">MUTLU MÜŞTERİLER</div>
+            </div>
+            <div class="col-sm text-center text-white mb-4">
+                <img src="job.png" alt="" width="56" height="56" class="mb-2">
+                <div class="fs-1">23</div>
+                <div class="fs-6">BAŞARILI VAKALAR</div>
+            </div>
+            <div class="col-sm text-center text-white mb-4">
+                <img src="cup.png" alt="" width="56" height="56" class="mb-2">
+                <div class="fs-1">12</div>
+                <div class="fs-6">Uzmanlar</div>
+            </div>
+            
+        </div>
+
+
+
+        <div class="row mb-5">
+            <div class="col-sm text-center mt-4">
+                <img src="price-tag.png" alt="" width="150" height="150">
+                <p class="fw-bold mt-4">Ekonomik Fiyatlar</p>
+                <div class="">Uygun fiyatlar ile bütçenizi zorlamıyoruz ve kolaylık sağlıyoruz</div>
+            </div>
+            <div class="col-sm text-center mt-4">
+                <img src="graphic-design.png" alt="" width="150" height="150">
+                <p class="fw-bold mt-4">Grafik Tasarım Desteği</p>
+                <div class="">Grafik tasarım departmanımız ile ücretsiz grafik tasarım hizmeti sunmaktayız</div>
+            </div>
+            <div class="col-sm text-center mt-4">
+                <img src="delivery-time.png" alt="" width="150" height="150">
+                <p class="fw-bold mt-4">Zamanında Teslimat</p>
+                <div class="">Siparişleriniz olması gerektiği gibi olması gerektiği zamanda teslim edilir</div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <h1 class="text-center text-danger fw-bold" style="background-color: rgba(128, 128, 128, 0.171);">Referanslarımızdan bazıları... Sizin de burada yeriniz var...</h1>
+
+
+    <div class="container my-5">
+        <div class="swiffy-slider slider-item-show6 slider-nav-autoplay">
+            <ul class="slider-container">
+                <li>
+                    <div id="slide1"><img src="img/referans/1.jpg" alt="" width="100%" height="150"></div>
+                </li>
+                <li>
+                    <div id="slide2"><img src="img/referans/2.jpg" alt="" width="100%" height="150"></div>
+                </li>
+                <li>
+                    <div id="slide3"><img src="img/referans/3.jpg" alt="" width="100%" height="150"></div>
+                </li>
+                <li>
+                    <div id="slide4"><img src="img/referans/4.jpg" alt="" width="100%" height="150"></div>
+                </li>
+                <li>
+                    <div id="slide5"><img src="img/referans/5.jpg" alt="" width="100%" height="150"></div>
+                </li>
+                <li>
+                    <div id="slide6"><img src="img/referans/6.jpg" alt="" width="100%" height="150"></div>
+                </li>
+                <li>
+                    <div id="slide7"><img src="img/referans/7.jpg" alt="" width="100%" height="150"></div>
+                </li>
+                <li>
+                    <div id="slide8"><img src="img/referans/8.jpg" alt="" width="100%" height="150"></div>
+                </li>
+                <li>
+                    <div id="slide9"><img src="img/referans/9.jpg" alt="" width="100%" height="150"></div>
+                </li>
+            </ul>
+        
+            <button type="button" class="slider-nav"></button>
+            <button type="button" class="slider-nav slider-nav-next"></button>
+        
+            <ul class="slider-indicators">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    
+
+    <div style="background-color:#495C60;" class="p-3">
+    <div class="container">
+        <div class="row">
+            <div">
+                <div class="col-sm text-center mx-auto text-white mb-3">
+                    <span class="fs-5">Detaylı Bilgi ve Teklif Almak İçin Form veya Whatsapp Üzerinden Ulaşın !</span>
+                </div>
+        
+                <div class="col-sm text-center mx-auto">
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group w-75 mb-3 mx-auto">
+                                <input type="text" class="form-control py-4" placeholder="İsim Soyisim" aria-label="İsim Soyisim" aria-describedby="basic-addon2">
+                                <input type="text" class="form-control py-4" placeholder="İletişim Numarası" aria-label="İletişim Numarası" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                  <button class="btn btn-danger text-capitalize fw-bold py-3" type="button">Beni Ara</button>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-success text-capitalize fw-bold" style="width: 30%;" type="button" ><img src="whatsapp.png"  alt=""  width="50" height="50"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <div class="row my-4">
+     
+        <div class="col-sm text-center mt-3 mb-5">
+            <h5 class="text-danger">Dış Mekan Baskı</h5>
+            <hr class="text-danger fw-bold w-50 mx-auto" style="height: 2px;">
+            <p class="text-dark">Folyo baskı</p>
+            <p class="text-dark">Vinil baskı</p>
+            <p class="text-dark">One wan vision baskı</p>
+            <p class="text-dark">Branda baskı</p>
+            <p class="text-dark">Afiş baskı</p>
+            <p class="text-dark">Cast folyo baski</p>
+            <p class="text-dark">Canvas baskı</p>
+            <p class="text-dark">UV baskı</p>
+            <p class="text-dark">Kumaş baskı</p>
+            <p class="text-dark">Lighbox baskı</p>
+        </div>
+        <div class="col-sm text-center mt-3 mb-5">
+            <h5 class="text-danger">Display Ürünler</h5>
+            <hr class="text-danger fw-bold w-50 mx-auto" style="height: 2px;">
+            <p class="text-dark">Duba</p>
+            <p class="text-dark">Xbanner</p>
+            <p class="text-dark">Rool banner</p>
+            <p class="text-dark">Örümcek stand</p>
+            <p class="text-dark">Kayan yazi</p>
+            <p class="text-dark">Tanıtım standı</p>
+            <p class="text-dark">Yönlendirme </p>
+            <p class="text-dark">Trafik levhaları</p>
+            <p class="text-dark">Uyarı ve ikaz tabelası</p>
+        </div>
+        <div class="col-sm text-center mt-3 mb-5">
+            <h5 class="text-danger">Tabela Çeşitleri</h5>
+            <hr class="text-danger fw-bold w-50 mx-auto" style="height: 2px;">
+            <p class="text-dark">Işıklı tabela/p>
+            <p class="text-dark">Işıksız tabela</p>
+            <p class="text-dark">Pleksi harf tabela</p>
+            <p class="text-dark">Krom harf tabela</p>
+            <p class="text-dark">Aluminyum tabela</p>
+            <p class="text-dark">Vinil tabela </p>
+            <p class="text-dark">Kompozit tabela</p>
+            <p class="text-dark">Sac tabela</p>
+            <p class="text-dark">Kutu harfli tabela</p>
+            <p class="text-dark">Totem</p>
+            <p class="text-dark">Pilon tabela</p>
+            <p class="text-dark">Yol ve çatı tabelasi</p>
+
+        </div>
+    </div>
+
+    <div style="background-color: #495C60; padding-bottom: 20px;">
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-sm text-center">
+                    <h4 class="text-white">İletişim Bilgilerimiz</h4>
+                    <p class="text-white">Kemerçeşme Mah. İstanbul Yolu Cad. No:140 <br>
+                    Osmangazi / BURSA</p>
+                    <p class="text-white">0224 253 09 05 - 0541 256 26 36 - 0532 575 6992</p>
+                    <p class="text-white">E-posta : info@acarreklam.com</p>
+                </div>
+                <div class="col-sm mb-3 text-center">
+                    <input type="text" class="mb-2" placeholder="Telefon Numaranız" style="width: 50%;">
+                    <br>
+                    <textarea name="" id="" cols="23" rows="3" style="width:50%" placeholder="Mesajınız"></textarea>
+                    <br>
+                    <button class="btn btn-danger text-capitalize fw-bold" type="button">Gönder</button>
+                </div>
+                <div class="col-sm">
+                    <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=200&amp;height=150&amp;hl=en&amp;q=Kemerçeşme Mahallesi İstanbul  yolu caddesi No: 140&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://piratebay-proxys.com/">Piratebay</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:150px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:150px;}.gmap_iframe {height:150px!important;}</style></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
